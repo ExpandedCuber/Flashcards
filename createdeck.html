@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Createdeck</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="frontcard"><textarea class="input-box" placeholder="Type question here"></textarea></div>
+        <div class="backcard"><textarea class="input-box" placeholder="Type answer here"></textarea></div>
+        <button id="saveButton" class="saveButton">Save</button>
+        <button id="resetButton" class="resetdeck">Reset</button>
+        <a href="opendeck.html" class="practice">Practice Deck</a>
+    </div>
+
+    <script src="index.js"></script>
+    <style>
+        .frontcard, .backcard {
+            width: 20vw;
+            height: 10vw;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .frontcard {
+            margin-right: 1vw;
+        }
+        .input-box {
+            width: 100%;
+            height: 100%; 
+            font-size: 2vw;
+            word-wrap: break-word;
+            white-space: pre-line;
+            border: 1px solid #ccc;
+            padding: 5px;
+            resize: vertical; 
+        }
+        .saveButton {
+            width: 5vw;
+            height: 3vw;
+            position: absolute;
+            top: 65%;
+            left: 44.8%;
+            background: blue;
+            border-style: none;
+        }
+        .resetdeck {
+            width: 5vw;
+            height: 3vw;
+            position: absolute;
+            top: 65%;
+            left: 50.3%;
+            background: blue;
+            border-style: none;
+        }
+        .saveButton:hover, .resetdeck:hover{
+            background-color: rgb(1, 1, 202);
+            cursor: pointer;
+        }
+        .practice {
+            color: white;
+            font-size: 3vw;
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            
+
+        }
+
+    </style>
+</body>
+</html>
